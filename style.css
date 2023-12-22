@@ -1,0 +1,146 @@
+@keyframes fadein {
+    from {opacity: 0%}
+    to {opacity: 100%; display: flex;}
+}
+@keyframes shrinklivestreambtn {
+    from {opacity: 1;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    to {
+        opacity: 0.8;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 39px;
+        padding-right: 39px;
+        font-size: 19px;
+        margin-bottom: 3px;
+    }
+}
+
+* {
+    margin: 0px;
+    overflow-x: hidden;
+}
+body {
+    margin-top: max(83px, 11vh);
+    background-color: #2d2d2d;
+}
+#menubar {
+    width: 100%;
+    box-shadow: 3px 3px 5px gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 10vh;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+    min-height: 70px;
+    overflow-y: hidden;
+}
+#menubar img {
+    width: 195px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 0.35vh;
+}
+#menubtns {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menubtn {
+    height: 80%;
+    border-width: 0px;
+    border-radius: 15px;
+    min-width: 9vw;
+    min-height: 56px;
+    font-weight: bold;
+    font-size: 120%;
+    background-color: white;
+}
+.menubtn:hover {
+    color: gold;
+}
+.info {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 30px;
+    height: max(min(99vh - 83px, 88vh), 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 1.2s;
+    overflow: hidden;
+    transform: translateX(100%);
+}
+#homeinfo1 {
+    background-image: url('images/worshiping.jpg');
+    background-size: cover;
+    font-size: xx-large;
+    color: white;
+}
+#homeinfo2 {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+#homeinfo2 img {
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    object-fit: cover;
+}
+#homeinfo2 div {
+    width: 50%;
+    margin: 40px;
+}
+#homeinfo2 h2 {
+    font-size: 200%;
+}
+#homeinfo2 p {
+    font-size: 130%;
+}
+#livestreambtn {
+    background-color: orange;
+    border-radius: 1000000px;
+    border-width: 0px;
+    color: white;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#livestreambtn:hover {
+    animation-name: shrinklivestreambtn;
+    animation-duration: 0.3s;
+    opacity: 0.8;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 39px;
+    padding-right: 39px;
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+.slidein {
+    transform: translateX(0%);
+}
