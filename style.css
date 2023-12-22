@@ -69,6 +69,7 @@ body {
 .menubtn:hover {
     color: gold;
 }
+@media only screen and (orientation: landscape) {
 .info {
     margin-left: 10px;
     margin-right: 10px;
@@ -83,6 +84,24 @@ body {
     transition: all 1.2s;
     overflow: hidden;
     transform: translateX(100%);
+}
+}
+@media only screen and (orientation: portrait) {
+    .info {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        box-shadow: 3px 3px 5px gray;
+        border-radius: 30px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 1.2s;
+        overflow: hidden;
+        transform: translateX(100%);
+    }
 }
 #homeinfo1 {
     background-image: url('images/worshiping.jpg');
